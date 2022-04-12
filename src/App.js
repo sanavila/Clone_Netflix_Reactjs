@@ -66,6 +66,12 @@ export default () => {
         Direitos de imagem para Neflix<br/>
         Dados pegos do site Themoviedb.org
       </footer>
+
+          {movieList.length <= 0 &&
+          <div className='loading'>
+            <img src='https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png' alt='Carregando' />
+          </div>
+          }
     </div>
   )
 }
